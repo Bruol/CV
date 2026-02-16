@@ -7,16 +7,6 @@ const OUTPUT_DIR = resolve(process.cwd(), 'dist')
 
 const ROUTES = [
   { path: '/', filename: 'cv.pdf' },
-  { path: '/1', filename: 'cv-swiss.pdf' },
-  { path: '/2', filename: 'cv-terminal.pdf' },
-  { path: '/3', filename: 'cv-editorial.pdf' },
-  { path: '/4', filename: 'cv-brutalist.pdf' },
-  { path: '/5', filename: 'cv-deco.pdf' },
-  { path: '/6', filename: 'cv-warm-serif.pdf' },
-  { path: '/7', filename: 'cv-mono-clean.pdf' },
-  { path: '/8', filename: 'cv-dark-pro.pdf' },
-  { path: '/9', filename: 'cv-latex.pdf' },
-  { path: '/10', filename: 'cv-pastel.pdf' },
 ]
 
 const PORT = Number(process.env.PORT ?? 4173)
