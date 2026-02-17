@@ -415,7 +415,7 @@ function App() {
             </div>
             <div className="grid grid-cols-[1fr_110px] gap-2">
               <div className="text-[11px] text-[#4b4842]">
-                Biking, Sports, Cooking, Dancing, Singing
+                Biking, Gym, Cooking, Dancing, Singing
               </div>
               <div className="text-[11px] text-[#6c6760] text-right">
                 Interests
