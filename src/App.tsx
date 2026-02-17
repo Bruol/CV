@@ -76,7 +76,7 @@ function App() {
               </div>
               <div className="grid grid-cols-[1fr_110px] gap-2">
                 <div className="text-[11px] text-[#4b4842]">
-                  Major: Data Management Systems
+                  Major: Data Management Systems, Minor: Machine Learning
                 </div>
                 <div className="text-[11px] text-[#6c6760] text-right">
                   2025 - present
@@ -149,7 +149,7 @@ function App() {
                   and auth
                 </div>
                 <div className="text-[11px] text-[#6c6760] text-right">
-                  2024 - now
+                  2024 - present
                 </div>
               </div>
             </div>
@@ -214,7 +214,7 @@ function App() {
                 </div>
               </div>
             </div>
-            <div>
+            {/* <div>
               <div className="text-[12px] font-medium">
                 House Representative, WOKO
               </div>
@@ -253,7 +253,7 @@ function App() {
                   2017
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </section>
 
@@ -274,8 +274,8 @@ function App() {
               </div>
               <div className="grid grid-cols-[1fr_110px] gap-2">
                 <div className="text-[11px] text-[#4b4842]">
-                  1000+ users, Flat sharing platform (React Native) with
-                  real-time chat, video streaming
+                  1000+ users, flat sharing platform (React Native and React)
+                  with real-time chat, video streaming
                 </div>
                 <div className="text-[11px] text-[#6c6760] text-right">
                   2024 - 2025
@@ -347,12 +347,13 @@ function App() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  3 Node Kubernetes Cluster
+                  Kubernetes Cluster
                 </a>
               </div>
               <div className="grid grid-cols-[1fr_110px] gap-2">
                 <div className="text-[11px] text-[#4b4842]">
-                  k3s on Proxmox LXC, metallb, Traefik, cert-manager
+                  Homelab with k3s on Proxmox, LXC, metallb, Traefik,
+                  cert-manager
                 </div>
                 <div className="text-[11px] text-[#6c6760] text-right">
                   2022
