@@ -12,7 +12,7 @@ function OpenCCACV() {
           </p>
           <div className="mt-1.5 flex flex-wrap gap-x-4 gap-y-0.5 text-[12px] text-[#2d2c29]">
             <a
-              href="mailto:lorin.urbantat@gmail.com"
+              href="mailto:lurbantat@ethz.ch"
               className="inline-flex items-center gap-1"
             >
               <svg
@@ -28,7 +28,7 @@ function OpenCCACV() {
                 <rect x="2" y="4" width="20" height="16" rx="2" />
                 <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
               </svg>
-              lorin.urbantat@gmail.com
+              lurbantat@ethz.ch
             </a>
             <a
               href="https://linkedin.com/in/bruol"

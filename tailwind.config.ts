@@ -5,7 +5,7 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['"IBM Plex Sans"', '"Helvetica Neue"', 'Arial', 'sans-serif'],
+        sans: ['"FKT Gnarly"', '"Helvetica Neue"', 'Arial', 'sans-serif'],
       },
     },
   },

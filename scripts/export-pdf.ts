@@ -7,6 +7,7 @@ const OUTPUT_DIR = resolve(process.cwd(), 'dist')
 
 const ROUTES = [
   { path: '/', filename: 'cv.pdf' },
+  { path: '/opencca/cv', filename: 'opencca-cv.pdf' },
 ]
 
 const PORT = Number(process.env.PORT ?? 4173)
