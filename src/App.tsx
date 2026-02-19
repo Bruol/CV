@@ -313,7 +313,9 @@ function App() {
               </div>
               <div className="grid grid-cols-[1fr_110px] gap-2">
                 <div className="text-[11px] text-[#4b4842]">
-                  Network emulator and traffic generator
+                SCION routing, IP gateway service, link properties (tc/netem),
+                  beacon metadata, and internet map UI for Docker-based network
+                  emulator
                 </div>
                 <div className="text-[11px] text-[#6c6760] text-right">
                   2024
