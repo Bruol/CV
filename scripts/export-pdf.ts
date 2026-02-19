@@ -8,6 +8,8 @@ const OUTPUT_DIR = resolve(process.cwd(), 'dist')
 const ROUTES = [
   { path: '/', filename: 'cv.pdf' },
   { path: '/opencca/cv', filename: 'opencca-cv.pdf' },
+  { path: '/fpga-quantized/cv', filename: 'fpga-quantized-cv.pdf' },
+  { path: '/fpga-http/cv', filename: 'fpga-http-cv.pdf' },
 ]
 
 const PORT = Number(process.env.PORT ?? 4173)

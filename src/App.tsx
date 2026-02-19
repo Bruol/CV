@@ -395,10 +395,10 @@ function App() {
             </div>
             <div className="grid grid-cols-[1fr_110px] gap-2">
               <div className="text-[11px] text-[#4b4842]">
-                <span className="font-medium">Advanced:</span> C, C++,
+                <span className="font-bold">Advanced:</span> C, C++,
                 Typescript, React, Python, Java, Git, Linux, Docker, Kubernetes,
                 Unity 3D, React-Native, Node, SQL, RAG, PCA <br />
-                <span className="font-medium">Good:</span> Ansible, LaTeX, x86
+                <span className="font-bold">Good:</span> Ansible, LaTeX, x86
                 Assembly, Eigen, FPGA, Bash, Virtualization, BigQuery, Firebase,
                 Google Looker Studio, Jenkins
               </div>
