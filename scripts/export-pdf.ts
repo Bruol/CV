@@ -7,6 +7,7 @@ const OUTPUT_DIR = resolve(process.cwd(), 'dist')
 
 const ROUTES = [
   { path: '/', filename: 'cv.pdf' },
+  { path: '/draft/classic', filename: 'cv-classic-draft.pdf' },
   { path: '/opencca/cv', filename: 'opencca-cv.pdf' },
   { path: '/fpga-quantized/cv', filename: 'fpga-quantized-cv.pdf' },
   { path: '/fpga-http/cv', filename: 'fpga-http-cv.pdf' },

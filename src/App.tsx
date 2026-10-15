@@ -1,7 +1,39 @@
-function App() {
+import type { ReactNode } from "react";
+
+function Section({ title, children }: { title: string; children: ReactNode }) {
   return (
-    <main className="min-h-screen bg-[#f6f4ef] py-6 text-[#101010] sm:py-10 print:min-h-0 print:bg-white print:py-0">
-      <div className="mx-auto w-full max-w-[900px] bg-[#fbfaf7] px-6 py-6 shadow-[0_18px_50px_rgba(0,0,0,0.08)] sm:px-10 sm:py-8 print:max-w-none print:bg-white print:shadow-none print:px-[12mm] print:py-[10mm]">
+    <section className="cv-section mt-2.5">
+      <h2 className="border-b border-[#2d2c29]/25 text-[15px] font-semibold text-[#2d2c29]">{title}</h2>
+      <div className="cv-section-entries mt-1.5 flex flex-col gap-1.5 pl-2">{children}</div>
+    </section>
+  );
+}
+
+function Entry({ title, date, children }: { title: ReactNode; date: string; children?: ReactNode }) {
+  return (
+    <div className="cv-entry">
+      <div className="cv-entry-heading flex items-baseline justify-between gap-3">
+        <div className="cv-entry-title text-[12px] font-medium">{title}</div>
+        <div className="cv-entry-date shrink-0 text-[11px] text-[#6c6760]">{date}</div>
+      </div>
+      {children && <div className="cv-entry-description text-[11px] text-[#4b4842] [&_ul]:list-disc [&_ul]:pl-4">{children}</div>}
+    </div>
+  );
+}
+
+function Skill({ label, children }: { label: string; children: ReactNode }) {
+  return (
+    <div className="cv-skill grid grid-cols-[1fr_110px] gap-2 text-[11px]">
+      <div className="text-[#4b4842]">{children}</div>
+      <div className="text-right text-[#6c6760]">{label}</div>
+    </div>
+  );
+}
+
+function App({ draft = false }: { draft?: boolean }) {
+  return (
+    <main className={`${draft ? "cv-classic-draft " : ""}min-h-screen bg-[#f6f4ef] py-6 text-[#101010] sm:py-10 print:min-h-0 print:bg-white print:py-0`}>
+      <div className="cv-page mx-auto w-full max-w-[900px] bg-[#fbfaf7] px-6 py-6 shadow-[0_18px_50px_rgba(0,0,0,0.08)] sm:px-10 sm:py-8 print:max-w-none print:bg-white print:shadow-none print:px-[12mm] print:py-[10mm]">
         <header className="pb-2.5">
           <h1 className="text-2xl font-semibold tracking-[-0.02em]">
             Lorin Urbantat
@@ -10,6 +42,14 @@ function App() {
             Computer Science Student @ ETH Zurich &middot; Software Engineer @
             ETH-CES
           </p>
+          {draft ? (
+            <div className="cv-contact">
+              <a href="mailto:lorin.urbantat@gmail.com">lorin.urbantat@gmail.com</a><span aria-hidden="true"> | </span>
+              <a href="https://linkedin.com/in/bruol" target="_blank" rel="noreferrer">LinkedIn</a><span aria-hidden="true"> | </span>
+              <a href="https://github.com/bruol" target="_blank" rel="noreferrer">GitHub</a><span aria-hidden="true"> | </span>
+              <a href="https://bruol.me/" target="_blank" rel="noreferrer">bruol.me</a>
+            </div>
+          ) : (
           <div className="mt-1.5 flex flex-wrap gap-x-4 gap-y-0.5 text-[12px] text-[#2d2c29]">
             <a
               href="mailto:lorin.urbantat@gmail.com"
@@ -62,369 +102,84 @@ function App() {
               </svg>
               GitHub
             </a>
+            <a href="https://bruol.me/" target="_blank" rel="noreferrer">bruol.me</a>
           </div>
+          )}
         </header>
 
-        <section className="mt-4 pt-3">
-          <h2 className="text-[15px] font-semibold text-[#2d2c29]">
-            Education
-          </h2>
-          <div className="mt-1.5 flex flex-col gap-1.5">
-            <div>
-              <div className="text-[12px] font-medium">
-                ETH Zurich, MSc Computer Science
-              </div>
-              <div className="grid grid-cols-[1fr_110px] gap-2">
-                <div className="text-[11px] text-[#4b4842]">
-                  Major: Data Management Systems, Minor: Machine Learning
-                </div>
-                <div className="text-[11px] text-[#6c6760] text-right">
-                  2025 - present
-                </div>
-              </div>
-            </div>
-            <div>
-              <div className="text-[12px] font-medium">
-                ETH Zurich, BSc Computer Science
-              </div>
-              <div className="grid grid-cols-[1fr_110px] gap-2">
-                <div className="text-[11px] text-[#4b4842]">
-                  Graduated August 2024 with 5.04 GPA
-                </div>
-                <div className="text-[11px] text-[#6c6760] text-right">
-                  2020 - 2024
-                </div>
-              </div>
-            </div>
-            <div>
-              <div className="text-[12px] font-medium">
-                Waldorfschule Muelheim an der Ruhr, Abitur
-              </div>
-              <div className="grid grid-cols-[1fr_110px] gap-2">
-                <div className="text-[11px] text-[#4b4842]">
-                  Grade 1.3 (best 1.0, worst 6.0)
-                </div>
-                <div className="text-[11px] text-[#6c6760] text-right">
-                  2007 - 2020
-                </div>
-              </div>
-            </div>
-            <div>
-              <div className="text-[12px] font-medium">
-                Deutsche Schueler Akademie
-              </div>
-              <div className="grid grid-cols-[1fr_110px] gap-2">
-                <div className="text-[11px] text-[#4b4842]">
-                  Summer school for gifted students
-                </div>
-                <div className="text-[11px] text-[#6c6760] text-right">
-                  2019
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <Section title="Education">
+          <Entry title="ETH Zurich, MSc Computer Science" date="2025 - 2027">
+            <ul>
+              <li>Expected Graduation: September 2027</li>
+              <li>Major: Data Management Systems</li>
+              <li><strong>Information Security Lab (5.75)</strong>, Computational Semantics for Natural Language Processing (5.75), Advanced Formal Language Theory (5.5)</li>
+            </ul>
+          </Entry>
+          <Entry title="ETH Zurich, BSc Computer Science" date="2021 - 2024">
+            <ul>
+              <li>Graduated August 2024, GPA 5.04 (6.0 – highest)</li>
+              <li><strong>Parallel Programming (5.75)</strong>, Numerical Methods (5.75), Analysis (5.5), Visual Computing (5.75), <strong>Applied Computer Architecture (6)</strong></li>
+            </ul>
+          </Entry>
+          <Entry title="Waldorfschule Mülheim an der Ruhr, Abitur" date="2007 - 2020">
+            GPA 1.3 (1.0 – highest)
+          </Entry>
+          <Entry title="Deutsche Schüler Akademie" date="2019">
+            Summer school for gifted students
+          </Entry>
+        </Section>
 
-        <section className="mt-3">
-          <h2 className="text-[15px] font-semibold text-[#2d2c29]">
-            Work Experience
-          </h2>
-          <div className="mt-1.5 flex flex-col gap-1.5">
-            <div>
-              <div className="text-[12px] font-medium">
-                Software Engineer @ ETH Chair of Education Systems
-              </div>
-              <div className="grid grid-cols-[1fr_110px] gap-2">
-                <div className="text-[11px] text-[#4b4842]">
-                  <a
-                    href="https://cesbot.ces.ethz.ch/"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="underline-offset-2 hover:underline"
-                  >
-                    CesBot
-                  </a>{" "}
-                  RAG chatbot, chat UI (Next.js, Convex), PDF processing
-                  pipeline (OCR, image description), Analytics, user management,
-                  and auth
-                </div>
-                <div className="text-[11px] text-[#6c6760] text-right">
-                  2024 - present
-                </div>
-              </div>
-            </div>
-            <div>
-              <div className="text-[12px] font-medium">
-                Software Engineer @ ETH Game Technology Center
-              </div>
-              <div className="grid grid-cols-[1fr_110px] gap-2">
-                <div className="text-[11px] text-[#4b4842]">
-                  <a
-                    href="https://ethz.ch/en/campus/getting-to-know/discover/tours/morph-tales.html"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="underline-offset-2 hover:underline"
-                  >
-                    Morph Tales
-                  </a>{" "}
-                  2000+ users, game in Unity 3D, Analytics pipeline (Firebase,
-                  BigQuery, Looker Studio), GenAI in game characters
-                </div>
-                <div className="text-[11px] text-[#6c6760] text-right">
-                  2023 - 2025
-                </div>
-              </div>
-            </div>
-            <div>
-              <div className="text-[12px] font-medium">
-                Coach @ mint & pepper
-              </div>
-              <div className="grid grid-cols-[1fr_110px] gap-2">
-                <div className="text-[11px] text-[#4b4842]">
-                  Introduce children and young people to AI
-                </div>
-                <div className="text-[11px] text-[#6c6760] text-right">
-                  2025
-                </div>
-              </div>
-            </div>
-            <div>
-              <div className="text-[12px] font-medium">
-                Calculus Exam-Preparation Course
-              </div>
-              <div className="grid grid-cols-[1fr_110px] gap-2">
-                <div className="text-[11px] text-[#4b4842]">
-                  Exam preparation course with ~20 participants
-                </div>
-                <div className="text-[11px] text-[#6c6760] text-right">
-                  2023
-                </div>
-              </div>
-            </div>
-            <div>
-              <div className="text-[12px] font-medium">
-                Calculus Teaching Assistant, ETH Zurich
-              </div>
-              <div className="grid grid-cols-[1fr_110px] gap-2">
-                <div className="text-[11px] text-[#4b4842]">
-                  Exercise classes with 15 - 30 students
-                </div>
-                <div className="text-[11px] text-[#6c6760] text-right">
-                  2023
-                </div>
-              </div>
-            </div>
-            {/* <div>
-              <div className="text-[12px] font-medium">
-                House Representative, WOKO
-              </div>
-              <div className="grid grid-cols-[1fr_110px] gap-2">
-                <div className="text-[11px] text-[#4b4842]">
-                  Organization of move-outs/ins and communication between
-                  students and WOKO
-                </div>
-                <div className="text-[11px] text-[#6c6760] text-right">
-                  2021 - 2022
-                </div>
-              </div>
-            </div>
-            <div>
-              <div className="text-[12px] font-medium">
-                Tutor, Waldorfschule Muelheim an der Ruhr
-              </div>
-              <div className="grid grid-cols-[1fr_110px] gap-2">
-                <div className="text-[11px] text-[#4b4842]">
-                  Tutorial classes (10 - 25 participants) in math and CS
-                </div>
-                <div className="text-[11px] text-[#6c6760] text-right">
-                  2017 - 2019
-                </div>
-              </div>
-            </div>
-            <div>
-              <div className="text-[12px] font-medium">
-                Intern, Dept, of Experimental Neurosurgery Charité
-              </div>
-              <div className="grid grid-cols-[1fr_110px] gap-2">
-                <div className="text-[11px] text-[#4b4842]">
-                  Internship at Neurosurgery Lab
-                </div>
-                <div className="text-[11px] text-[#6c6760] text-right">
-                  2017
-                </div>
-              </div>
-            </div> */}
-          </div>
-        </section>
+        <Section title="Work Experience">
+          <Entry title="Information Security Lab Teaching Assistant, ETH Zurich" date="2026 - Present">
+            Test lab exercises and host exercise sessions
+          </Entry>
+          <Entry title="Software Engineer, ETH Chair of Education Systems" date="2025 - Present">
+            Sole engineer responsible for end-to-end development of a research-focused RAG chatbot using Next.js, Convex and Microsoft Foundry, serving 1,000 users
+          </Entry>
+          <Entry title="Software Engineer, ETH Game Technology Center" date="2023 - 2025">
+            <ul>
+              <li><a href="https://ethz.ch/en/campus/getting-to-know/discover/tours/morph-tales.html" target="_blank" rel="noreferrer">Morph Tales Game</a>, Unity 3D</li>
+              <li>Developed Unity features for Morph Tales and built a game analytics pipeline using Firebase, BigQuery and Looker Studio.</li>
+            </ul>
+          </Entry>
+          <Entry title="Coach, mint & pepper" date="2025">
+            STEM and AI tutor for high school students
+          </Entry>
+          <Entry title="Calculus Teaching Assistant and Exam-Preparation Course, ETH Zurich" date="2023">
+            Host exercise classes, 15 - 30 students
+          </Entry>
+          <Entry title="Tutor, Waldorfschule Mülheim an der Ruhr" date="2017 - 2019">
+            Tutorial classes (10 - 25 participants) in Math and Computer Science
+          </Entry>
+        </Section>
 
-        <section className="mt-3">
-          <h2 className="text-[15px] font-semibold text-[#2d2c29]">
-            Personal Projects
-          </h2>
-          <div className="mt-1.5 flex flex-col gap-1.5">
-            <div>
-              <div className="text-[12px] font-medium">
-                <a
-                  href="https://flateroo.com/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Flateroo
-                </a>
-              </div>
-              <div className="grid grid-cols-[1fr_110px] gap-2">
-                <div className="text-[11px] text-[#4b4842]">
-                  1000+ users, flat sharing platform (React Native and React)
-                  with real-time chat, video streaming
-                </div>
-                <div className="text-[11px] text-[#6c6760] text-right">
-                  2024 - 2025
-                </div>
-              </div>
-            </div>
-            <div>
-              <div className="text-[12px] font-medium">
-                <a
-                  href="https://electomate.com/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Electomate
-                </a>
-              </div>
-              <div className="grid grid-cols-[1fr_110px] gap-2">
-                <div className="text-[11px] text-[#4b4842]">
-                  AI powered voting advice for elections, RAG tool
-                </div>
-                <div className="text-[11px] text-[#6c6760] text-right">
-                  2024
-                </div>
-              </div>
-            </div>
-            <div>
-              <div className="text-[12px] font-medium">
-                <a
-                  href="https://bruol.me/other/A_Comprehensive_Test_Environment_For_SCION_Control_Plane_Algorithms.pdf"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  SCION Control Plane Test Environment
-                </a>
-              </div>
-              <div className="grid grid-cols-[1fr_110px] gap-2">
-                <div className="text-[11px] text-[#4b4842]">
-                SCION routing, IP gateway service, link properties (tc/netem),
-                  beacon metadata, and internet map UI for Docker-based network
-                  emulator
-                </div>
-                <div className="text-[11px] text-[#6c6760] text-right">
-                  2024
-                </div>
-              </div>
-            </div>
-            <div>
-              <div className="text-[12px] font-medium">
-                <a
-                  href="https://tldr.bruol.me/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  TLDR
-                </a>
-              </div>
-              <div className="grid grid-cols-[1fr_110px] gap-2">
-                <div className="text-[11px] text-[#4b4842]">
-                  Lecture summarizer using OpenAI Whisper and API to create
-                  searchable summaries
-                </div>
-                <div className="text-[11px] text-[#6c6760] text-right">
-                  2023
-                </div>
-              </div>
-            </div>
-            <div>
-              <div className="text-[12px] font-medium">
-                <a
-                  href="https://github.com/Bruol/kubernetes-cluster"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Kubernetes Cluster
-                </a>
-              </div>
-              <div className="grid grid-cols-[1fr_110px] gap-2">
-                <div className="text-[11px] text-[#4b4842]">
-                  Homelab with k3s on Proxmox, LXC, metallb, Traefik,
-                  cert-manager
-                </div>
-                <div className="text-[11px] text-[#6c6760] text-right">
-                  2022
-                </div>
-              </div>
-            </div>
-            <div>
-              <div className="text-[12px] font-medium">
-                <a href="https://bruol.me/" target="_blank" rel="noreferrer">
-                  bruol.me
-                </a>
-              </div>
-              <div className="grid grid-cols-[1fr_110px] gap-2">
-                <div className="text-[11px] text-[#4b4842]">
-                  Portfolio website built with Next.js and Tailwind CSS
-                </div>
-                <div className="text-[11px] text-[#6c6760] text-right">
-                  2022
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <Section title="Personal Projects & Relevant Experience">
+          <Entry title={<><a href="https://bruol.me/other/Porting_Unikraft_to_Raspberry_Pi_5.pdf" target="_blank" rel="noreferrer">Unikraft on Raspberry Pi 5</a>, ETH Semester Project</>} date="2026">
+            <ul>
+              <li>Ported Unikraft to Raspberry Pi 5, implementing AArch64 boot, memory initialization, interrupts and timers</li>
+              <li>Developed a cache-safe kernel reload mechanism using OpenOCD and GDB, enabling repeated deployment without power-cycling.</li>
+            </ul>
+          </Entry>
+          <Entry title={<><a href="https://flateroo.com/" target="_blank" rel="noreferrer">Flateroo</a>, Flat sharing platform</>} date="2024 - 2025">
+            <ul>
+              <li>React Native application with real-time chat, video streaming infrastructure</li>
+              <li>Node backend, video transcoding, HLS streaming, PostgreSQL, fly.io</li>
+            </ul>
+          </Entry>
+          <Entry title={<><a href="https://opendemocracy.ai/electomate" target="_blank" rel="noreferrer">OpenDemocracy</a>, RAG Powered Voting Advice application for elections</>} date="2024" />
+          <Entry title={<><a href="https://bruol.me/other/A_Comprehensive_Test_Environment_For_SCION_Control_Plane_Algorithms.pdf" target="_blank" rel="noreferrer">SCION Control Plane Algorithms Test Environment</a>, Bachelor Thesis</>} date="2024">
+            Built a Docker-based environment and traffic generator to evaluate SCION control-plane algorithms under configurable topologies and changing link conditions.
+          </Entry>
+          <Entry title={<><a href="https://tldr.bruol.me/" target="_blank" rel="noreferrer">TLDR</a>, Lecture Summarizer (VIScon Hackathon)</>} date="2023">
+            Lecture summarizer using OpenAI Whisper to create searchable lecture summaries from videos
+          </Entry>
+        </Section>
 
-        <section className="mt-3">
-          <h2 className="text-[15px] font-semibold text-[#2d2c29]">
-            Skills & Interests
-          </h2>
-          <div className="mt-1.5 flex flex-col gap-1">
-            <div className="grid grid-cols-[1fr_110px] gap-2">
-              <div className="text-[11px] text-[#4b4842]">
-                German (native), English (fluent), French (DELF B1)
-              </div>
-              <div className="text-[11px] text-[#6c6760] text-right">
-                Languages
-              </div>
-            </div>
-            <div className="grid grid-cols-[1fr_110px] gap-2">
-              <div className="text-[11px] text-[#4b4842]">
-                <span className="font-bold">Advanced:</span> C, C++,
-                Typescript, React, Python, Java, Git, Linux, Docker, Kubernetes,
-                Unity 3D, React-Native, Node, SQL, RAG, PCA <br />
-                <span className="font-bold">Good:</span> Ansible, LaTeX, x86
-                Assembly, Eigen, FPGA, Bash, Virtualization, BigQuery, Firebase,
-                Google Looker Studio, Jenkins
-              </div>
-              <div className="text-[11px] text-[#6c6760] text-right">
-                Technologies
-              </div>
-            </div>
-            <div className="grid grid-cols-[1fr_110px] gap-2">
-              <div className="text-[11px] text-[#4b4842]">
-                Communication, Time Management, Analytical Thinking, Problem
-                Solving
-              </div>
-              <div className="text-[11px] text-[#6c6760] text-right">
-                Skills
-              </div>
-            </div>
-            <div className="grid grid-cols-[1fr_110px] gap-2">
-              <div className="text-[11px] text-[#4b4842]">
-                Biking, Gym, Cooking, Dancing, Singing
-              </div>
-              <div className="text-[11px] text-[#6c6760] text-right">
-                Interests
-              </div>
-            </div>
-          </div>
-        </section>
+        <Section title="Skills & Interests">
+          <Skill label="Languages">German (native), English (fluent), French (DELF B1)</Skill>
+          <Skill label="Technologies">AArch64 Assembly, C, C++, Kernel Development, TypeScript, React, Python, Java, Git, Linux, Containerization, Unity 3D, React Native, Node.js, SQL, RAG, Machine Learning, PCA</Skill>
+          <Skill label="Interests">Biking, Sports, Cooking, Dancing, Singing</Skill>
+        </Section>
       </div>
     </main>
   );
