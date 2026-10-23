@@ -130,25 +130,25 @@ function App({ draft = false }: { draft?: boolean }) {
         </Section>
 
         <Section title="Work Experience">
-          <Entry title="Information Security Lab Teaching Assistant, ETH Zurich" date="2026 - Present">
+          <Entry title="Information Security Lab Teaching Assistant, ETH Zurich (part-time)" date="2026 - Present">
             Test lab exercises and host exercise sessions
           </Entry>
-          <Entry title="Software Engineer, ETH Chair of Education Systems" date="2025 - Present">
+          <Entry title="Software Engineer, ETH Chair of Education Systems (part-time)" date="2025 - Present">
             Sole engineer responsible for end-to-end development of a research-focused RAG chatbot using Next.js, Convex and Microsoft Foundry, serving 1,000 users
           </Entry>
-          <Entry title="Software Engineer, ETH Game Technology Center" date="2023 - 2025">
+          <Entry title="Software Engineer, ETH Game Technology Center (part-time)" date="2023 - 2025">
             <ul>
               <li><a href="https://ethz.ch/en/campus/getting-to-know/discover/tours/morph-tales.html" target="_blank" rel="noreferrer">Morph Tales Game</a>, Unity 3D</li>
               <li>Developed Unity features for Morph Tales and built a game analytics pipeline using Firebase, BigQuery and Looker Studio.</li>
             </ul>
           </Entry>
-          <Entry title="Coach, mint & pepper" date="2025">
+          <Entry title="Coach, mint & pepper (part-time)" date="2025">
             STEM and AI tutor for high school students
           </Entry>
-          <Entry title="Calculus Teaching Assistant, ETH Zurich" date="2023">
+          <Entry title="Calculus Teaching Assistant, ETH Zurich (part-time)" date="2023">
             Host exercise classes, 15 - 30 students
           </Entry>
-          <Entry title="Tutor, Waldorfschule Mülheim an der Ruhr" date="2017 - 2019">
+          <Entry title="Tutor, Waldorfschule Mülheim an der Ruhr (part-time)" date="2017 - 2019">
             Tutorial classes (10 - 25 participants) in Math and Computer Science
           </Entry>
         </Section>
