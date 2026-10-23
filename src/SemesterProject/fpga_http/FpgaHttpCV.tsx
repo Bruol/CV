@@ -236,11 +236,11 @@ function FpgaHttpCV() {
             <div>
               <div className="text-[12px] font-medium">
                 <a
-                  href="https://electomate.com/"
+                  href="https://opendemocracy.ai/electomate"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  Electomate
+                  OpenDemocracy
                 </a>
               </div>
               <div className="grid grid-cols-[1fr_110px] gap-2">
