@@ -145,7 +145,7 @@ function App({ draft = false }: { draft?: boolean }) {
           <Entry title="Coach, mint & pepper" date="2025">
             STEM and AI tutor for high school students
           </Entry>
-          <Entry title="Calculus Teaching Assistant and Exam-Preparation Course, ETH Zurich" date="2023">
+          <Entry title="Calculus Teaching Assistant, ETH Zurich" date="2023">
             Host exercise classes, 15 - 30 students
           </Entry>
           <Entry title="Tutor, Waldorfschule Mülheim an der Ruhr" date="2017 - 2019">
