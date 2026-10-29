@@ -90,19 +90,25 @@ function AvatarMotionCV() {
           </Entry>
         </Section>
 
-        <Section title="Selected Projects & Research Experience">
-          <Entry title={<><a href="https://tldr.bruol.me/">TLDR - Speech-based Lecture Summarizer</a>, VIScon Hackathon</>} date="2023">
-            Used OpenAI Whisper and language model APIs to turn lecture recordings into searchable summaries.
+        <Section title="Personal Projects & Relevant Experience">
+          <Entry title={<><a href="https://bruol.me/other/Porting_Unikraft_to_Raspberry_Pi_5.pdf" target="_blank" rel="noreferrer">Unikraft on Raspberry Pi 5</a>, ETH Semester Project</>} date="2026">
+            <ul>
+              <li>Ported Unikraft to Raspberry Pi 5, implementing AArch64 boot, memory initialization, interrupts and timers</li>
+              <li>Developed a cache-safe kernel reload mechanism using OpenOCD and GDB, enabling repeated deployment without power-cycling.</li>
+            </ul>
+          </Entry>
+          <Entry title={<><a href="https://flateroo.com/" target="_blank" rel="noreferrer">Flateroo</a>, Flat sharing platform</>} date="2024 - 2025">
+            <ul>
+              <li>React Native application with real-time chat, video streaming infrastructure</li>
+              <li>Node backend, video transcoding, HLS streaming, PostgreSQL, fly.io</li>
+            </ul>
           </Entry>
           <Entry title={<><a href="https://opendemocracy.ai/electomate" target="_blank" rel="noreferrer">OpenDemocracy</a>, RAG Powered Voting Advice application for elections</>} date="2024" />
-          <Entry title={<><a href="https://bruol.me/other/A_Comprehensive_Test_Environment_For_SCION_Control_Plane_Algorithms.pdf">SCION Control Plane Algorithms Test Environment</a>, Bachelor Thesis</>} date="2024">
-            Built a Docker-based test environment and traffic generator to evaluate algorithms under configurable network topologies and changing link conditions.
+          <Entry title={<><a href="https://bruol.me/other/A_Comprehensive_Test_Environment_For_SCION_Control_Plane_Algorithms.pdf" target="_blank" rel="noreferrer">SCION Control Plane Algorithms Test Environment</a>, Bachelor Thesis</>} date="2024">
+            Built a Docker-based environment and traffic generator to evaluate SCION control-plane algorithms under configurable topologies and changing link conditions.
           </Entry>
-          <Entry title={<><a href="https://bruol.me/other/Porting_Unikraft_to_Raspberry_Pi_5.pdf">Unikraft on Raspberry Pi 5</a>, ETH Semester Project</>} date="2026">
-            Ported Unikraft to Raspberry Pi 5, implementing AArch64 boot, memory initialization, interrupts and timers; developed a cache-safe kernel reload mechanism with OpenOCD and GDB.
-          </Entry>
-          <Entry title={<><a href="https://flateroo.com/">Flateroo</a>, Flat Sharing Platform</>} date="2024 - 2025">
-            Built a React Native application with real-time chat and video streaming; implemented video transcoding, HLS delivery and a PostgreSQL backend.
+          <Entry title={<><a href="https://tldr.bruol.me/" target="_blank" rel="noreferrer">TLDR</a>, Lecture Summarizer (VIScon Hackathon)</>} date="2023">
+            Lecture summarizer using OpenAI Whisper to create searchable lecture summaries from videos
           </Entry>
         </Section>
 
