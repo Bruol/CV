@@ -2,6 +2,8 @@
 
 A small React app that renders a CV and exports print-perfect A4 PDFs.
 
+The default and required format for new CVs is the blue-and-black layout in `src/cv.css`: centered header, blue underlined links, black text, uppercase section headings, and right-aligned dates.
+
 This repo renders a CV (single-page, A4) and can export it to PDF via Playwright.
 
 ## Quickstart
@@ -43,6 +45,7 @@ bun run preview
 ## Routes
 
 - `/` CV
+- `/avatar-motion/cv` CV tailored to Synthesizing Avatar Motion from AI Glasses (Google XR)
 
 Routing is defined in `src/main.tsx`.
 
@@ -57,6 +60,7 @@ bun run export:pdf
 Output:
 
 - `dist/cv.pdf` (route `/`)
+- `dist/avatar-motion-cv.pdf` (route `/avatar-motion/cv`)
 
 Notes:
 

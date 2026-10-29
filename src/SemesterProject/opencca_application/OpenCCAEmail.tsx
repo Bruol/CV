@@ -1,7 +1,7 @@
 function OpenCCAEmail() {
   return (
-    <main className="min-h-screen bg-[#f6f4ef] py-6 text-[#101010] sm:py-10 print:min-h-0 print:bg-white print:py-0">
-      <div className="mx-auto w-full max-w-[900px] bg-[#fbfaf7] px-6 py-6 shadow-[0_18px_50px_rgba(0,0,0,0.08)] sm:px-10 sm:py-8 print:max-w-none print:bg-white print:shadow-none print:px-[12mm] print:py-[10mm]">
+    <main className="min-h-screen bg-white py-6 text-[#101010] sm:py-10 print:min-h-0 print:bg-white print:py-0">
+      <div className="mx-auto w-full max-w-[900px] bg-white px-6 py-6 shadow-[0_18px_50px_rgba(0,0,0,0.08)] sm:px-10 sm:py-8 print:max-w-none print:bg-white print:shadow-none print:px-[12mm] print:py-[10mm]">
         {/* Header / From */}
         <header className="pb-4 border-b border-[#e5e2db]">
           <div className="flex items-start justify-between">
@@ -165,7 +165,7 @@ function OpenCCAEmail() {
         <div className="mt-8 flex gap-3 print:hidden">
           <button
             onClick={() => window.print()}
-            className="rounded bg-[#2d2c29] px-4 py-2 text-[12px] font-medium text-[#fbfaf7] transition-colors hover:bg-[#4c4a45]"
+            className="rounded bg-[#2d2c29] px-4 py-2 text-[12px] font-medium text-white transition-colors hover:bg-[#4c4a45]"
           >
             Print / Save as PDF
           </button>

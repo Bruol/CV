@@ -22,7 +22,7 @@
   body {
     font-family: "FKT Gnarly", "Helvetica Neue", Arial, sans-serif;
     color: #101010;
-    background-color: #f6f4ef;
+    background-color: #fff;
   }
 
   @media print {
@@ -37,7 +37,7 @@
   }
 
   a {
-    color: #887cf3;
+    color: #0000ee;
     text-decoration: none;
   }
 

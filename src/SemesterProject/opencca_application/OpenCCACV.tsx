@@ -1,7 +1,7 @@
 function OpenCCACV() {
   return (
-    <main className="min-h-screen bg-[#f6f4ef] py-6 text-[#101010] sm:py-10 print:min-h-0 print:bg-white print:py-0">
-      <div className="mx-auto w-full max-w-[900px] bg-[#fbfaf7] px-6 py-6 shadow-[0_18px_50px_rgba(0,0,0,0.08)] sm:px-10 sm:py-8 print:max-w-none print:bg-white print:shadow-none print:px-[12mm] print:py-[10mm]">
+    <main className="min-h-screen bg-white py-6 text-[#101010] sm:py-10 print:min-h-0 print:bg-white print:py-0">
+      <div className="mx-auto w-full max-w-[900px] bg-white px-6 py-6 shadow-[0_18px_50px_rgba(0,0,0,0.08)] sm:px-10 sm:py-8 print:max-w-none print:bg-white print:shadow-none print:px-[12mm] print:py-[10mm]">
         <header className="pb-2.5">
           <h1 className="text-2xl font-semibold tracking-[-0.02em]">
             Lorin Urbantat
