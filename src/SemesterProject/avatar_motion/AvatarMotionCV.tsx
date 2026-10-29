@@ -94,6 +94,7 @@ function AvatarMotionCV() {
           <Entry title={<><a href="https://tldr.bruol.me/">TLDR - Speech-based Lecture Summarizer</a>, VIScon Hackathon</>} date="2023">
             Used OpenAI Whisper and language model APIs to turn lecture recordings into searchable summaries.
           </Entry>
+          <Entry title={<><a href="https://opendemocracy.ai/electomate" target="_blank" rel="noreferrer">OpenDemocracy</a>, RAG Powered Voting Advice application for elections</>} date="2024" />
           <Entry title={<><a href="https://bruol.me/other/A_Comprehensive_Test_Environment_For_SCION_Control_Plane_Algorithms.pdf">SCION Control Plane Algorithms Test Environment</a>, Bachelor Thesis</>} date="2024">
             Built a Docker-based test environment and traffic generator to evaluate algorithms under configurable network topologies and changing link conditions.
           </Entry>
