@@ -32,7 +32,7 @@ function Skill({ label, children }: { label: string; children: ReactNode }) {
 
 function AvatarMotionCV() {
   return (
-    <main className="cv-classic min-h-screen bg-white py-6 text-black sm:py-10 print:min-h-0 print:py-0">
+    <main className="cv-classic cv-roomy min-h-screen bg-white py-6 text-black sm:py-10 print:min-h-0 print:py-0">
       <div className="cv-page mx-auto w-full max-w-[900px] bg-white px-6 py-6 shadow-[0_18px_50px_rgba(0,0,0,0.08)] sm:px-10 sm:py-8 print:max-w-none print:bg-white print:shadow-none print:px-[12mm] print:py-[10mm]">
         <header className="pb-2.5">
           <h1 className="text-2xl font-semibold tracking-[-0.02em]">

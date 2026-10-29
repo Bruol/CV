@@ -125,3 +125,9 @@
   .cv-classic { background: #fff; }
   .cv-classic .cv-page { max-width: none; box-shadow: none; }
 }
+.cv-classic.cv-roomy .cv-page {
+  line-height: 1.22;
+}
+.cv-classic.cv-roomy .cv-entry-title {
+  font-size: 16px;
+}
