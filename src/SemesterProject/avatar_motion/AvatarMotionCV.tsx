@@ -51,24 +51,19 @@ function AvatarMotionCV() {
 
         </header>
 
-        <p className="mb-3 text-[11px] leading-relaxed text-[#4b4842]">
-          ETH computer science master's student with experience in Unity 3D, AI applications,
-          and speech processing. Interested in conditional generative models for expressive avatar
-          motion from sparse head, inertial, and speech signals.
-        </p>
 
         <Section title="Education">
           <Entry title="ETH Zurich, MSc Computer Science" date="2025 - 2027">
             <ul>
-              <li>Expected Graduation: September 2027</li>
+              <li>Expected Graduation: 2027</li>
               <li>Major: Data Management Systems; Minor: Machine Learning</li>
-              <li>Relevant coursework: Machine Perception, Computational Intelligence Lab, Computational Semantics for Natural Language Processing (5.75/6)</li>
+              <li><strong>Information Security Lab (5.75)</strong>, Computational Semantics for Natural Language Processing (5.75), Advanced Formal Language Theory (5.5)</li>
             </ul>
           </Entry>
           <Entry title="ETH Zurich, BSc Computer Science" date="2021 - 2024">
             <ul>
               <li>Graduated August 2024, GPA 5.04 (6.0 – highest)</li>
-              <li>Visual Computing (5.75/6), Numerical Methods (5.75/6), Autonomous Mobile Robots (5.25/6), Human Computer Interaction (5.25/6), Introduction to Machine Learning</li>
+              <li>Parallel Programming (5.75), Numerical Methods (5.75), Analysis (5.5), <strong>Visual Computing (5.75)</strong>, Applied Computer Architecture (6), Human Computer Interaction (5.25)</li>
             </ul>
           </Entry>
         </Section>
