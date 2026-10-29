@@ -115,7 +115,7 @@ function AvatarMotionCV() {
 
         <Section title="Skills & Interests">
           <Skill label="Languages">German (native), English (fluent), French (DELF B1)</Skill>
-          <Skill label="Technologies">Python, PyTorch, C, C++, Unity 3D, Machine Learning, RAG, SQL, TypeScript, React, Git, Linux, Docker</Skill>
+          <Skill label="Technologies">Python, PyTorch, C, C++, Unity 3D, RAG, SQL, TypeScript, React, Git, Linux, Docker</Skill>
           <Skill label="Interests">Biking, Sports, Cooking, Dancing, Singing</Skill>
         </Section>
       </div>
