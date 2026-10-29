@@ -39,7 +39,8 @@ function AvatarMotionCV() {
             Lorin Urbantat
           </h1>
           <p className="mt-0.5 text-[13px] text-[#4c4a45]">
-            MSc Computer Science, ETH Zurich &middot; Machine Learning & Interactive Systems
+            Computer Science Student @ ETH Zurich &middot; Software Engineer @
+            ETH-CES
           </p>
 
             <div className="cv-contact">
