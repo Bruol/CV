@@ -57,7 +57,7 @@ function AvatarMotionCV() {
           <Entry title="ETH Zurich, MSc Computer Science" date="2025 - 2027">
             <ul>
               <li>Expected Graduation: 2027</li>
-              <li>Major: Data Management Systems; Minor: Machine Learning</li>
+              <li>Major: Data Management Systems; <strong>Minor: Machine Learning</strong></li>
               <li><strong>Information Security Lab (5.75)</strong>, Computational Semantics for Natural Language Processing (5.75), Advanced Formal Language Theory (5.5)</li>
             </ul>
           </Entry>
