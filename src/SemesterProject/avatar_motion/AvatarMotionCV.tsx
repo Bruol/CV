@@ -43,7 +43,7 @@ function AvatarMotionCV() {
           </p>
 
             <div className="cv-contact">
-              <a href="mailto:lorin.urbantat@gmail.com">lorin.urbantat@gmail.com</a><span aria-hidden="true"> | </span>
+              <a href="mailto:lurbantat@ethz.ch">lurbantat@ethz.ch</a><span aria-hidden="true"> | </span>
               <a href="https://linkedin.com/in/bruol" target="_blank" rel="noreferrer">LinkedIn</a><span aria-hidden="true"> | </span>
               <a href="https://github.com/bruol" target="_blank" rel="noreferrer">GitHub</a><span aria-hidden="true"> | </span>
               <a href="https://bruol.me/" target="_blank" rel="noreferrer">bruol.me</a>
