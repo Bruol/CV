@@ -47,7 +47,7 @@ function App() {
               <a href="mailto:lorin.urbantat@gmail.com">lorin.urbantat@gmail.com</a><span aria-hidden="true"> | </span>
               <a href="https://linkedin.com/in/bruol" target="_blank" rel="noreferrer">LinkedIn</a><span aria-hidden="true"> | </span>
               <a href="https://github.com/bruol" target="_blank" rel="noreferrer">GitHub</a><span aria-hidden="true"> | </span>
-              <a href="https://bruol.me/" target="_blank" rel="noreferrer">bruol.me</a>
+              <a href="https://bruol.com/" target="_blank" rel="noreferrer">bruol.com</a>
             </div>
 
         </header>
@@ -99,7 +99,7 @@ function App() {
         </Section>
 
         <Section title="Personal Projects & Relevant Experience">
-          <Entry title={<><a href="https://bruol.me/other/Porting_Unikraft_to_Raspberry_Pi_5.pdf" target="_blank" rel="noreferrer">Unikraft on Raspberry Pi 5</a>, ETH Semester Project</>} date="2026">
+          <Entry title={<><a href="https://bruol.com/other/Porting_Unikraft_to_Raspberry_Pi_5.pdf" target="_blank" rel="noreferrer">Unikraft on Raspberry Pi 5</a>, ETH Semester Project</>} date="2026">
             <ul>
               <li>Ported Unikraft to Raspberry Pi 5, implementing AArch64 boot, memory initialization, interrupts and timers</li>
               <li>Developed a cache-safe kernel reload mechanism using OpenOCD and GDB, enabling repeated deployment without power-cycling.</li>
@@ -112,7 +112,7 @@ function App() {
             </ul>
           </Entry>
           <Entry title={<><a href="https://opendemocracy.ai/electomate" target="_blank" rel="noreferrer">OpenDemocracy</a>, RAG Powered Voting Advice application for elections</>} date="2024" />
-          <Entry title={<><a href="https://bruol.me/other/A_Comprehensive_Test_Environment_For_SCION_Control_Plane_Algorithms.pdf" target="_blank" rel="noreferrer">SCION Control Plane Algorithms Test Environment</a>, Bachelor Thesis</>} date="2024">
+          <Entry title={<><a href="https://bruol.com/other/A_Comprehensive_Test_Environment_For_SCION_Control_Plane_Algorithms.pdf" target="_blank" rel="noreferrer">SCION Control Plane Algorithms Test Environment</a>, Bachelor Thesis</>} date="2024">
             Built a Docker-based environment and traffic generator to evaluate SCION control-plane algorithms under configurable topologies and changing link conditions.
           </Entry>
           <Entry title={<><a href="https://tldr.bruol.me/" target="_blank" rel="noreferrer">TLDR</a>, Lecture Summarizer (VIScon Hackathon)</>} date="2023">
