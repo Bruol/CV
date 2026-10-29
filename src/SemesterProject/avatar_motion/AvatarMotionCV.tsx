@@ -64,7 +64,7 @@ function AvatarMotionCV() {
           <Entry title="ETH Zurich, BSc Computer Science" date="2021 - 2024">
             <ul>
               <li>Graduated August 2024, GPA 5.04 (6.0 – highest)</li>
-              <li>Parallel Programming (5.75), Numerical Methods (5.75), Analysis (5.5), <strong>Visual Computing (5.75)</strong>, Applied Computer Architecture (6), Human Computer Interaction (5.25)</li>
+              <li>Parallel Programming (5.75), Numerical Methods (5.75), <strong>Visual Computing (5.75)</strong>, Applied Computer Architecture (6), <strong>Human Computer Interaction (5.25)</strong>, <strong>Autonomous Mobile Robots (5.25)</strong></li>
             </ul>
           </Entry>
         </Section>
