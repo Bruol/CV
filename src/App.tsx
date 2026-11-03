@@ -102,7 +102,7 @@ function App() {
           <Entry title={<><a href="https://bruol.com/other/Porting_Unikraft_to_Raspberry_Pi_5.pdf" target="_blank" rel="noreferrer">Unikraft on Raspberry Pi 5</a>, ETH Semester Project</>} date="2026">
             <ul>
               <li>Ported Unikraft to Raspberry Pi 5: AArch64 boot, memory, interrupts and timers</li>
-              <li>Cache-safe kernel reload via OpenOCD and GDB without power-cycling</li>
+              <li>Cache-safe kernel hot reload via OpenOCD and GDB without power-cycling</li>
             </ul>
           </Entry>
           <Entry title={<><a href="https://flateroo.com/" target="_blank" rel="noreferrer">Flateroo</a>, Flat sharing platform</>} date="2024 - 2025">
