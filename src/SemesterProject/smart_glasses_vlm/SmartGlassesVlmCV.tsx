@@ -117,7 +117,9 @@ function SmartGlassesVlmCV() {
           </Entry>
           <Entry title={<><a href="https://bruol.me/projects/sql-ast-research/" target="_blank" rel="noreferrer">SQL AST Research Project</a>, Schema-aware SQLite fuzzer in C++20</>} date="2026" />
           <Entry title={<><a href="https://bruol.me/projects/database-query-reduction/" target="_blank" rel="noreferrer">Database Query Reduction</a>, Bug reproducer reducer, 95.9% token reduction</>} date="2026" />
-          <Entry title={<><a href="https://bruol.me/projects/thinking-outside-the-bias/" target="_blank" rel="noreferrer">Thinking Outside the Bias</a>, LLM bias evaluation framework, research project</>} date="2025" />
+          <Entry title={<><a href="https://bruol.me/projects/thinking-outside-the-bias/" target="_blank" rel="noreferrer">Thinking Outside the Bias</a>, LLM Bias Research Project</>} date="2025">
+            Python evaluation framework judging the bias of LLMs on BBQ and StereoSet datasets
+          </Entry>
         </Section>
 
         <Section title="Skills & Interests">
