@@ -6,6 +6,7 @@ import { chromium } from 'playwright'
 const OUTPUT_DIR = resolve(process.cwd(), 'dist')
 
 const ROUTES = [
+  { path: '/smart-glasses-vlm/cv', filename: 'smart-glasses-vlm-cv.pdf' },
   { path: '/avatar-motion/cv', filename: 'avatar-motion-cv.pdf' },
   { path: '/', filename: 'cv.pdf' },
   { path: '/opencca/cv', filename: 'opencca-cv.pdf' },

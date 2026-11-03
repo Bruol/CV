@@ -9,12 +9,14 @@ import OpenCCACV from "./SemesterProject/opencca_application/OpenCCACV.tsx";
 import FpgaQuantizedCV from "./SemesterProject/fpga_quantized/FpgaQuantizedCV.tsx";
 import FpgaHttpCV from "./SemesterProject/fpga_http/FpgaHttpCV.tsx";
 
+import SmartGlassesVlmCV from "./SemesterProject/smart_glasses_vlm/SmartGlassesVlmCV.tsx";
 import AvatarMotionCV from "./SemesterProject/avatar_motion/AvatarMotionCV.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <BrowserRouter>
       <Routes>
+        <Route path="/smart-glasses-vlm/cv" element={<SmartGlassesVlmCV />} />
         <Route path="/avatar-motion/cv" element={<AvatarMotionCV />} />
         <Route path="/" element={<App />} />
         <Route path="/draft/classic" element={<Navigate to="/" replace />} />
