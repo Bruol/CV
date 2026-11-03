@@ -32,7 +32,7 @@ function Skill({ label, children }: { label: string; children: ReactNode }) {
 
 function SmartGlassesVlmCV() {
   return (
-    <main className="cv-classic min-h-screen bg-white py-6 text-black sm:py-10 print:min-h-0 print:py-0">
+    <main className="cv-classic cv-airy min-h-screen bg-white py-6 text-black sm:py-10 print:min-h-0 print:py-0">
       <div className="cv-page mx-auto w-full max-w-[900px] bg-white px-6 py-6 shadow-[0_18px_50px_rgba(0,0,0,0.08)] sm:px-10 sm:py-8 print:max-w-none print:bg-white print:shadow-none print:px-[12mm] print:py-[10mm]">
         <header className="pb-2.5">
           <h1 className="text-2xl font-semibold tracking-[-0.02em]">
@@ -101,8 +101,8 @@ function SmartGlassesVlmCV() {
         <Section title="Personal Projects & Relevant Experience">
           <Entry title={<><a href="https://bruol.com/other/Porting_Unikraft_to_Raspberry_Pi_5.pdf" target="_blank" rel="noreferrer">Unikraft on Raspberry Pi 5</a>, ETH Semester Project</>} date="2026">
             <ul>
-              <li>Ported Unikraft to Raspberry Pi 5, implementing AArch64 boot, memory initialization, interrupts and timers</li>
-              <li>Developed a cache-safe kernel reload mechanism using OpenOCD and GDB, enabling repeated deployment without power-cycling.</li>
+              <li>Ported Unikraft to Raspberry Pi 5: AArch64 boot, memory, interrupts and timers</li>
+              <li>Cache-safe kernel reload via OpenOCD and GDB without power-cycling</li>
             </ul>
           </Entry>
           <Entry title={<><a href="https://flateroo.com/" target="_blank" rel="noreferrer">Flateroo</a>, Flat sharing platform</>} date="2024 - 2025">
@@ -118,7 +118,7 @@ function SmartGlassesVlmCV() {
           <Entry title={<><a href="https://bruol.me/projects/sql-ast-research/" target="_blank" rel="noreferrer">SQL AST Research Project</a>, Schema-aware SQLite fuzzer in C++20</>} date="2026" />
           <Entry title={<><a href="https://bruol.me/projects/database-query-reduction/" target="_blank" rel="noreferrer">Database Query Reduction</a>, Bug reproducer reducer, 95.9% token reduction</>} date="2026" />
           <Entry title={<><a href="https://bruol.me/projects/thinking-outside-the-bias/" target="_blank" rel="noreferrer">Thinking Outside the Bias</a>, LLM Bias Research Project</>} date="2025">
-            Python evaluation framework judging the bias of LLMs on BBQ and StereoSet datasets
+            Python evaluation framework judging the bias of LLMs on BBQ and StereoSet
           </Entry>
         </Section>
 
