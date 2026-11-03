@@ -5,4 +5,4 @@
 - Keep tailored CVs factual and use the existing CV and transcripts as evidence. Do not turn research interests into claimed experience.
 - Export to a single A4 page and visually inspect the PDF before delivery.
 - Save completed application PDFs in `/Users/bruol/Nextcloud/lo_data/Dokumente/Lebenslauf/03_Applications/` in a descriptive application subfolder, unless the user specifies another destination.
-- Every CV version (main template and tailored copies) must keep the SCION testbed link (`https://bruol.me/projects/scion-test-environment/` on "testbed" in the SCION entry) and list the SQL AST fuzzer (`https://bruol.me/projects/sql-ast-research/`) and Database Query Reduction (`https://bruol.me/projects/database-query-reduction/`) projects. Do not re-add the TLDR project.
+- Every CV version (main template and tailored copies) must list the SQL AST fuzzer (`https://bruol.me/projects/sql-ast-research/`) and Database Query Reduction (`https://bruol.me/projects/database-query-reduction/`) projects. Link "research-focused RAG chatbot" in the ETH Chair of Education Systems entry to `https://bruol.me/projects/cesbot/`. Do not re-add the TLDR project.

@@ -79,7 +79,7 @@ function App() {
             Test lab exercises and host exercise sessions
           </Entry>
           <Entry title="Software Engineer, ETH Chair of Education Systems (part-time)" date="2025 - Present">
-            Sole engineer responsible for end-to-end development of a research-focused RAG chatbot using Next.js, Convex and Microsoft Foundry, serving 1,000 users
+            Sole engineer responsible for end-to-end development of a <a href="https://bruol.me/projects/cesbot/" target="_blank" rel="noreferrer">research-focused RAG chatbot</a> using Next.js, Convex and Microsoft Foundry, serving 1,000 users
           </Entry>
           <Entry title="Software Engineer, ETH Game Technology Center (part-time)" date="2023 - 2025">
             <ul>
@@ -113,7 +113,7 @@ function App() {
           </Entry>
           <Entry title={<><a href="https://opendemocracy.ai/electomate" target="_blank" rel="noreferrer">OpenDemocracy</a>, RAG Powered Voting Advice application for elections</>} date="2024" />
           <Entry title={<><a href="https://bruol.com/other/A_Comprehensive_Test_Environment_For_SCION_Control_Plane_Algorithms.pdf" target="_blank" rel="noreferrer">SCION Control Plane Algorithms Test Environment</a>, Bachelor Thesis</>} date="2024">
-            Built a Docker-based <a href="https://bruol.me/projects/scion-test-environment/" target="_blank" rel="noreferrer">testbed</a> and traffic generator to evaluate SCION control-plane algorithms under configurable topologies and changing link conditions.
+            Built a Docker-based environment and traffic generator to evaluate SCION control-plane algorithms under configurable topologies and changing link conditions.
           </Entry>
           <Entry title={<><a href="https://bruol.me/projects/sql-ast-research/" target="_blank" rel="noreferrer">SQL AST Research Project</a>, Schema-aware SQLite fuzzer in C++20</>} date="2026" />
           <Entry title={<><a href="https://bruol.me/projects/database-query-reduction/" target="_blank" rel="noreferrer">Database Query Reduction</a>, Bug reproducer reducer, 95.9% token reduction</>} date="2026" />
