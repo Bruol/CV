@@ -74,13 +74,12 @@ function SmartGlassesVlmCV() {
             Test lab exercises and host exercise sessions
           </Entry>
           <Entry title="Software Engineer, ETH Chair of Education Systems (part-time)" date="2025 - Present">
-            Sole engineer for a <a href="https://bruol.me/projects/cesbot/" target="_blank" rel="noreferrer">research-focused RAG chatbot</a> serving 1,000 users. Built a multimodal document processing pipeline with OCR and model-generated image descriptions, plus the application itself, using Next.js, Convex and Microsoft Foundry.
+            Sole engineer for a <a href="https://bruol.me/projects/cesbot/" target="_blank" rel="noreferrer">research-focused RAG chatbot</a> (1,000 users) with a multimodal OCR and image-description pipeline using Next.js, Convex and Microsoft Foundry
           </Entry>
           <Entry title="Software Engineer, ETH Game Technology Center (part-time)" date="2023 - 2025">
             <ul>
-              <li><a href="https://ethz.ch/en/campus/getting-to-know/discover/tours/morph-tales.html" target="_blank" rel="noreferrer">Morph Tales Game</a>, Unity 3D</li>
-              <li>Developed features for an interactive Unity 3D game and worked on generative AI in game characters.</li>
-              <li>Built a game analytics pipeline using Firebase, BigQuery and Looker Studio.</li>
+              <li><a href="https://ethz.ch/en/campus/getting-to-know/discover/tours/morph-tales.html" target="_blank" rel="noreferrer">Morph Tales Game</a> (Unity 3D): game features and generative AI characters</li>
+              <li>Game analytics pipeline using Firebase, BigQuery and Looker Studio</li>
             </ul>
           </Entry>
           <Entry title="Coach, mint & pepper (part-time)" date="2025">

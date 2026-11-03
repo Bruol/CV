@@ -83,8 +83,8 @@ function App() {
           </Entry>
           <Entry title="Software Engineer, ETH Game Technology Center (part-time)" date="2023 - 2025">
             <ul>
-              <li><a href="https://ethz.ch/en/campus/getting-to-know/discover/tours/morph-tales.html" target="_blank" rel="noreferrer">Morph Tales Game</a>, Unity 3D</li>
-              <li>Developed Unity features for Morph Tales and built a game analytics pipeline using Firebase, BigQuery and Looker Studio.</li>
+              <li><a href="https://ethz.ch/en/campus/getting-to-know/discover/tours/morph-tales.html" target="_blank" rel="noreferrer">Morph Tales Game</a> (Unity 3D): game features and generative AI characters</li>
+              <li>Game analytics pipeline using Firebase, BigQuery and Looker Studio</li>
             </ul>
           </Entry>
           <Entry title="Coach, mint & pepper (part-time)" date="2025">
