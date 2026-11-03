@@ -100,10 +100,7 @@ function SmartGlassesVlmCV() {
 
         <Section title="Personal Projects & Relevant Experience">
           <Entry title={<><a href="https://bruol.com/other/Porting_Unikraft_to_Raspberry_Pi_5.pdf" target="_blank" rel="noreferrer">Unikraft on Raspberry Pi 5</a>, ETH Semester Project</>} date="2026">
-            <ul>
-              <li>Ported Unikraft to Raspberry Pi 5, implementing AArch64 boot, memory initialization, interrupts and timers</li>
-              <li>Developed a cache-safe kernel reload mechanism using OpenOCD and GDB, enabling repeated deployment without power-cycling.</li>
-            </ul>
+            Ported the Unikraft unikernel to Raspberry Pi 5 and built a cache-safe kernel hot reload mechanism via OpenOCD and GDB
           </Entry>
           <Entry title={<><a href="https://flateroo.com/" target="_blank" rel="noreferrer">Flateroo</a>, Flat sharing platform, 1,000+ users</>} date="2024 - 2025">
             <ul>
