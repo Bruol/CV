@@ -32,7 +32,7 @@ function Skill({ label, children }: { label: string; children: ReactNode }) {
 
 function SmartGlassesVlmCV() {
   return (
-    <main className="cv-classic cv-roomy min-h-screen bg-white py-6 text-black sm:py-10 print:min-h-0 print:py-0">
+    <main className="cv-classic min-h-screen bg-white py-6 text-black sm:py-10 print:min-h-0 print:py-0">
       <div className="cv-page mx-auto w-full max-w-[900px] bg-white px-6 py-6 shadow-[0_18px_50px_rgba(0,0,0,0.08)] sm:px-10 sm:py-8 print:max-w-none print:bg-white print:shadow-none print:px-[12mm] print:py-[10mm]">
         <header className="pb-2.5">
           <h1 className="text-2xl font-semibold tracking-[-0.02em]">
@@ -52,20 +52,25 @@ function SmartGlassesVlmCV() {
 
         </header>
 
-
         <Section title="Education">
           <Entry title="ETH Zurich, MSc Computer Science" date="2025 - 2027">
             <ul>
-              <li>Expected Graduation: 2027</li>
+              <li>Expected Graduation: September 2027</li>
               <li>Major: Data Management Systems; <strong>Minor: Machine Learning</strong></li>
-              <li><strong>Machine Perception</strong>, <strong>Computational Semantics for Natural Language Processing (5.75)</strong>, Computational Intelligence Lab, Information Security Lab (5.75)</li>
+              <li><strong>Information Security Lab (5.75)</strong>, Computational Semantics for Natural Language Processing (5.75), Advanced Formal Language Theory (5.5)</li>
             </ul>
           </Entry>
           <Entry title="ETH Zurich, BSc Computer Science" date="2021 - 2024">
             <ul>
               <li>Graduated August 2024, GPA 5.04 (6.0 – highest)</li>
-              <li><strong>Applied Computer Architecture (6)</strong>, <strong>Visual Computing (5.75)</strong>, Parallel Programming (5.75), Numerical Methods (5.75), Systems Programming and Computer Architecture (5.5), Autonomous Mobile Robots (5.25)</li>
+              <li><strong>Parallel Programming (5.75)</strong>, Numerical Methods (5.75), Analysis (5.5), Visual Computing (5.75), <strong>Applied Computer Architecture (6)</strong></li>
             </ul>
+          </Entry>
+          <Entry title="Waldorfschule Mülheim an der Ruhr, Abitur" date="2007 - 2020">
+            GPA 1.3 (1.0 – highest)
+          </Entry>
+          <Entry title="Deutsche Schüler Akademie" date="2019">
+            Summer school for gifted students
           </Entry>
         </Section>
 
@@ -74,7 +79,7 @@ function SmartGlassesVlmCV() {
             Test lab exercises and host exercise sessions
           </Entry>
           <Entry title="Software Engineer, ETH Chair of Education Systems (part-time)" date="2025 - Present">
-            Sole engineer for a <a href="https://bruol.me/projects/cesbot/" target="_blank" rel="noreferrer">research-focused RAG chatbot</a> (1,000 users) with a multimodal OCR and image-description pipeline using Next.js, Convex and Microsoft Foundry
+            Sole engineer responsible for end-to-end development of a <a href="https://bruol.me/projects/cesbot/" target="_blank" rel="noreferrer">research-focused RAG chatbot</a> using Next.js, Convex and Microsoft Foundry, serving 1,000 users
           </Entry>
           <Entry title="Software Engineer, ETH Game Technology Center (part-time)" date="2023 - 2025">
             <ul>
@@ -88,6 +93,9 @@ function SmartGlassesVlmCV() {
           <Entry title="Calculus Teaching Assistant, ETH Zurich (part-time)" date="2023">
             Host exercise classes, 15 - 30 students
           </Entry>
+          <Entry title="Tutor, Waldorfschule Mülheim an der Ruhr (part-time)" date="2017 - 2019">
+            Tutorial classes (10 - 25 participants) in Math and Computer Science
+          </Entry>
         </Section>
 
         <Section title="Personal Projects & Relevant Experience">
@@ -95,11 +103,13 @@ function SmartGlassesVlmCV() {
             <ul>
               <li>Ported Unikraft to Raspberry Pi 5, implementing AArch64 boot, memory initialization, interrupts and timers</li>
               <li>Developed a cache-safe kernel reload mechanism using OpenOCD and GDB, enabling repeated deployment without power-cycling.</li>
-              <li>Bare-metal development and on-target debugging on an ARM SoC</li>
             </ul>
           </Entry>
           <Entry title={<><a href="https://flateroo.com/" target="_blank" rel="noreferrer">Flateroo</a>, Flat sharing platform</>} date="2024 - 2025">
-            React Native app with real-time chat, Node backend and HLS video streaming
+            <ul>
+              <li>React Native application with real-time chat, video streaming infrastructure</li>
+              <li>Node backend, video transcoding, HLS streaming, PostgreSQL, fly.io</li>
+            </ul>
           </Entry>
           <Entry title={<><a href="https://opendemocracy.ai/electomate" target="_blank" rel="noreferrer">OpenDemocracy</a>, RAG Powered Voting Advice application for elections</>} date="2024" />
           <Entry title={<><a href="https://bruol.com/other/A_Comprehensive_Test_Environment_For_SCION_Control_Plane_Algorithms.pdf" target="_blank" rel="noreferrer">SCION Control Plane Algorithms Test Environment</a>, Bachelor Thesis</>} date="2024">
@@ -107,11 +117,12 @@ function SmartGlassesVlmCV() {
           </Entry>
           <Entry title={<><a href="https://bruol.me/projects/sql-ast-research/" target="_blank" rel="noreferrer">SQL AST Research Project</a>, Schema-aware SQLite fuzzer in C++20</>} date="2026" />
           <Entry title={<><a href="https://bruol.me/projects/database-query-reduction/" target="_blank" rel="noreferrer">Database Query Reduction</a>, Bug reproducer reducer, 95.9% token reduction</>} date="2026" />
+          <Entry title={<><a href="https://bruol.me/projects/thinking-outside-the-bias/" target="_blank" rel="noreferrer">Thinking Outside the Bias</a>, LLM bias evaluation framework, research project</>} date="2025" />
         </Section>
 
         <Section title="Skills & Interests">
           <Skill label="Languages">German (native), English (fluent), French (DELF B1)</Skill>
-          <Skill label="Technologies">Python, PyTorch, C, C++, AArch64 Assembly, Embedded / Bare-metal, Kernel Development, Linux, Git, Containerization, TypeScript, React, Node.js, Java, RAG</Skill>
+          <Skill label="Technologies">Python, PyTorch, AArch64 Assembly, C, C++, Kernel Development, TypeScript, React, Java, Git, Linux, Containerization, Unity 3D, React Native, Node.js, SQL, RAG, Machine Learning, PCA</Skill>
           <Skill label="Interests">Biking, Sports, Cooking, Dancing, Singing</Skill>
         </Section>
       </div>

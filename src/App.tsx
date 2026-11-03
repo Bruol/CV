@@ -117,6 +117,7 @@ function App() {
           </Entry>
           <Entry title={<><a href="https://bruol.me/projects/sql-ast-research/" target="_blank" rel="noreferrer">SQL AST Research Project</a>, Schema-aware SQLite fuzzer in C++20</>} date="2026" />
           <Entry title={<><a href="https://bruol.me/projects/database-query-reduction/" target="_blank" rel="noreferrer">Database Query Reduction</a>, Bug reproducer reducer, 95.9% token reduction</>} date="2026" />
+          <Entry title={<><a href="https://bruol.me/projects/thinking-outside-the-bias/" target="_blank" rel="noreferrer">Thinking Outside the Bias</a>, LLM bias evaluation framework, research project</>} date="2025" />
         </Section>
 
         <Section title="Skills & Interests">
