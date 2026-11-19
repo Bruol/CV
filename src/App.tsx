@@ -99,7 +99,7 @@ function App() {
         </Section>
 
         <Section title="Personal Projects & Relevant Experience">
-          <Entry title={<><a href="https://bruol.com/other/Porting_Unikraft_to_Raspberry_Pi_5.pdf" target="_blank" rel="noreferrer">Unikraft on Raspberry Pi 5</a>, ETH Semester Project</>} date="2026">
+          <Entry title={<><a href="https://bruol.com/other/Porting_Unikraft_to_Raspberry_Pi_5.pdf" target="_blank" rel="noreferrer">Unikraft on Raspberry Pi 5</a>, ETH Semester Project, <a href="https://sectrs.ethz.ch/" target="_blank" rel="noreferrer">SECTRS</a></>} date="2026">
             Ported the Unikraft unikernel to Raspberry Pi 5 and built a cache-safe kernel hot reload mechanism via OpenOCD and GDB
           </Entry>
           <Entry title={<><a href="https://flateroo.com/" target="_blank" rel="noreferrer">Flateroo</a>, Flat sharing platform, 1,000+ users</>} date="2024 - 2025">
@@ -109,7 +109,7 @@ function App() {
             </ul>
           </Entry>
           <Entry title={<><a href="https://opendemocracy.ai/electomate" target="_blank" rel="noreferrer">OpenDemocracy</a>, RAG Powered Voting Advice for elections, 5,000+ users</>} date="2024" />
-          <Entry title={<><a href="https://bruol.com/other/A_Comprehensive_Test_Environment_For_SCION_Control_Plane_Algorithms.pdf" target="_blank" rel="noreferrer">SCION Control Plane Algorithms Test Environment</a>, Bachelor Thesis</>} date="2024">
+          <Entry title={<><a href="https://bruol.com/other/A_Comprehensive_Test_Environment_For_SCION_Control_Plane_Algorithms.pdf" target="_blank" rel="noreferrer">SCION Control Plane Algorithms Test Environment</a>, Bachelor Thesis, <a href="https://netsec.ethz.ch/" target="_blank" rel="noreferrer">NetSec</a></>} date="2024">
             Built a Docker-based environment and traffic generator to evaluate SCION control-plane algorithms under configurable topologies and changing link conditions.
           </Entry>
           <Entry title={<><a href="https://bruol.me/projects/sql-ast-research/" target="_blank" rel="noreferrer">SQL AST Research Project</a>, Schema-aware SQLite fuzzer in C++20</>} date="2026" />
