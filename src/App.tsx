@@ -122,7 +122,7 @@ function App() {
         <Section title="Skills & Interests">
           <Skill label="Languages">German (native), English (fluent), French (DELF B1)</Skill>
           <Skill label="Technologies">AArch64 Assembly, C, C++, Kernel Development, TypeScript, React, Python, Java, Git, Linux, Containerization, Unity 3D, React Native, Node.js, SQL, RAG, Machine Learning, PCA</Skill>
-          <Skill label="Interests">Marathon (4:08:51), Lifting (deadlift 165 kg, bench 100 kg, bulgarian split squat 72 kg), Biking (234 km, 3,517 m ride), 130-week Strava streak, Cooking, Dancing, Singing</Skill>
+          <Skill label="Interests">Marathon (4:08:51), Lifting (deadlift 165kg, bench 100kg, bulgarian split squat 72kg), Biking (234km, 3,517m ride), 130-week Strava streak, Cooking, Dancing, Singing</Skill>
         </Section>
       </div>
     </main>
